@@ -1,0 +1,680 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>YoutubeClone</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+
+    <div class="flex flex-col">
+      <div class="navbar w-full fixed bg-white">
+        <div class="flex w-full justify-between m-5">
+          <div class="w-[115px] ml-">
+            <img
+              class="w-[100%] h-[100%] object-center object-contain"
+              src="https://static.cdnlogo.com/logos/y/73/youtube.svg"
+              alt=""
+            />
+          </div>
+          <div>
+            <div class="flex flex-nowrap">
+              <input
+                type="text"
+                class="border rounded-l-full py-2 xl:px-[200px] md:px-[100px] text-nowrap"
+              />
+              <button class="border rounded-r-full py-3 px-3">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+
+              <button class="rounded-full bg-gray-300 p-2 mr-4 ml-2">
+                <i class="fa-solid fa-microphone"></i>
+              </button>
+            </div>
+          </div>
+          <div class="pr-10 w-[150px] flex items-center justify-between">
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-user"></i>
+          </div>
+        </div>
+      </div>
+
+      <!-- conatiner start -->
+      <div class="mt-16 w-[100%] h-[100vh]">
+        <div class="w-[12%] bg-white h-[100vh] overflow-y-scroll fixed">
+          <div class="sidebar w-[10%] h-[100vh] fixed top-[105px]">
+            <div
+              class="bg-white flex flex-col justify-between items-center gap-5 pt-3"
+            >
+              <div class="flex flex-col items-center">
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <span>Home</span>
+              </div>
+              <div class="flex flex-col items-center">
+                <i class="fa-brands fa-square-youtube"></i>
+                <span>sorts</span>
+              </div>
+              <div class="flex flex-col items-center">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <span>subscribe</span>
+              </div>
+              <div class="flex flex-col items-center">
+                <i class="fa-solid fa-user"></i>
+                <span>User</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ml-[15%] h-[100vh]">
+          <div>
+            <div
+              class="flex justify-start space-x-6 p-4 bg-white overflow-x-scroll"
+            >
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">Music</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">Latest</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">News</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">workout</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">bolliwood</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">Music</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">Latest</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">News</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">workout</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">bolliwood</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">Music</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">Music</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">Latest</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">News</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">workout</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">bolliwood</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">Music</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">Latest</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">News</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">workout</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">bolliwood</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">Music</span>
+
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">News</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">workout</span>
+              <span class="bg-gray-200/90 px-2 py-2 rounded-xl">bolliwood</span>
+            </div>
+          </div>
+          <div class="">
+            <div class="mt-10 overflow-y-hidden flex flex-wrap ml-2 justify-between">
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-[300px] mt-1 ml-1">
+                <img
+                  src="https://wpfrank.com/wp-content/uploads/2022/01/responsive-sizes1.jpg"
+                  alt=""
+                />
+
+                <div class="flex flex-row gap-2">
+                  <div class="w-[100px] h-[30px] rounded-full">
+                    <img
+                      class="w-[100%] h-[100%] object-center object-contain"
+                      src="https://www.pngall.com/wp-content/uploads/13/Logo-Youtube-PNG-Free-Image.png"
+                      alt=""
+                    />
+                  </div>
+                  <div class="name">
+                    <p class="font-bold w-full">
+                      GPT-4 is OpenAI most advanced system, producing
+                    </p>
+                    <span class="font-semibold">
+                      Learning Coding
+                      <span class="rounded-full bg-blue-500 p-[3px]"
+                        ><i class="fa-solid fa-check"></i
+                      ></span>
+                    </span>
+                    <p class="font-thin">50K views . 4 day ago</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
